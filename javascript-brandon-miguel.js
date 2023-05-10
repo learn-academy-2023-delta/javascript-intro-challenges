@@ -27,3 +27,12 @@ console.log(myName.includes("e")) // false
 
 var myName=("Brandon")
 console.log("Brandon"[0]) // B
+
+var myName = ('miguel')
+console.log(myName.toUpperCase()) //MIGUEL
+
+const theQuestion = "life, the universe, and everything"
+const theAnswer = 42
+
+console.log(theAnswer / 2) // 21
+console.log(theAnswer.modulo / 3) // 14 
