@@ -19,3 +19,32 @@ console.log("Kevin".toLowerCase().includes("e".toLowerCase()))
 console.log("Kevin".charAt(0))
 // Write the code that will log the string in all uppercase letters.
 console.log("Kevin".toUpperCase())
+
+
+// Consider the variables:
+
+const theQuestion = "life, the universe, and everything"
+const theAnswer = 42
+// Write the code that will log theAnswer divided by 2.
+console.log(theAnswer / 2)
+// Write the code that will log the whole number remainder of theAnswer when divided by 3.
+console.log(theAnswer % 3)
+// Write the code that will log the length of theQuestion.
+console.log(theQuestion.length)
+// Write the code that will log the length of theQuestion divided by 2.
+console.log(theQuestion.length / 2)
+// Write the code that will log the length of theQuestion added to theAnswer.
+console.log(theQuestion.length + theAnswer)
+// Write the code that will log the index of the character "f" in the theQuestion.
+// Write the code that will log the index of the second comma in the theQuestion.
+// Write the code that will log the concatenation of the two variables.
+// Write the code that will log the character "l" from theQuestion.
+// Write the code that will extract "the universe" from theQuestion.
+// Write the code that will extract "everything" from theQuestion.
+// Write the code that will log the last character of theQuestion without manually counting the number of characters.
+
+
+
+//is 34 divided by 3 greater than 67 divided by 2?
+
+console.log(34 / 3 > 67 /2)
