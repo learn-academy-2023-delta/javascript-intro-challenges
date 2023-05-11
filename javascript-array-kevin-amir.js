@@ -9,15 +9,20 @@ console.log(groceryList.push("soda"))
 console.log(groceryList)
 
 // Write the code that will add "granola" to the end of array without altering the original array.
-var groceryList = ["chips", "dip", "cookies", "soda"]
-
-// console.log(groceryList.concat(item1))
+var item1 = ["Granola"]
+console.log(groceryList.concat(item1))
+    //  console.log(groceryList) verify original array isnt changed 
 
 // Write the code that will return a subset of the array containing only "chips" and "dip".
 
-//console.log(groceryList.slice(0, 2))
+console.log(groceryList.slice(0, 2))
 
 // Write the code that will add "beans" to the "chips" and "dip" array.
+
+var snack = groceryList.slice(0, 2)
+console.log(snack.push("beans"))
+console.log(snack)
+
 
 //var snack = console.log(groceryList.slice(0, 2))
 
