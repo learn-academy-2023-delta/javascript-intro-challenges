@@ -19,3 +19,38 @@ for(i = 1; i < 21; i++) {
     console.log("ODD");
   }
 }
+
+
+//------------
+
+const nums = [3, 57, -9, 20, 67]
+
+// Create the code that will log the largest number from the array.
+
+let answer = nums[0]
+
+for(let i = 0; i < nums.length; i++){
+    
+    if(answer < nums[i]){
+      answer = nums[i]
+    }
+  }
+console.log(answer)
+
+// Create the code that will log the smallest number from the array.
+
+let answer1 = nums[0]
+
+for(let i = 0; i < nums.length; i++){
+    
+  if(answer1 > nums[i]){
+    answer1 = nums[i]
+  }
+}
+console.log(answer1)
+
+// Create the code that will log the remainder of each number when divided by 2. Expected output: 1, 1, -1, 0, 1
+
+for(let i = 0; i < nums.length; i++) {
+  console.log(nums[i] % 2)
+}
