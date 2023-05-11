@@ -22,3 +22,21 @@ console.log(groceryList.slice(0,2))
 var chipsDips = groceryList.slice(0,2)
 console.log(chipsDips.push("beans"))
 console.log(chipsDips)
+
+// Second Challenge
+
+var numSet = [2, 13, 6, 8, 4, 2]
+
+// Write the code that finds the index of the first appearance of the number 2.
+
+console.log(numSet[0])
+
+// Write the code that finds the index of the last appearance of the number 2.
+
+console.log(numSet.reverse())
+console.log(numSet[5])
+
+// Write the code that returns the number at the third index.
+
+console.log(numSet.reverse())
+console.log(numSet.indexOf(8))
