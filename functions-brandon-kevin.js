@@ -135,6 +135,34 @@ console.log(yelling("heyy!!!!!!"))
 // The World Translator
 
 // Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
+
+// es then say in spanish hello world.
+
+
+const helloWorld = (lang) => {
+    if (lang === "es") {
+        return "Hola Mundo!"
+    }
+    else if (lang === "de") {
+        return "Hallo Welt!"
+    }
+    else if (lang === "en") {
+        return "Hello World!"
+    }
+    else if (lang === "jp") {
+        return "Konnichiwa Sekai!"
+    }
+    else if (lang === "fr") {
+        return "Bonjour le Monde"
+    }
+    else {
+        return "catch all"
+    }
+    }
+
+console.log(helloWorld("fr"))
+
+
 // Have your function default to returning English.
 // The Pluralizer
 
