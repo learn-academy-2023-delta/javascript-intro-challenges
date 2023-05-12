@@ -40,11 +40,47 @@ const multiply =(num1,num2) =>{
 console.log(multiply(3,5))
 
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
-
+const divisibleBy = (num1, num2) => {
+    if(num1 % num2 === 0) {
+        return `${num1} is evenly divisible by ${num2}`
+    } else { 
+        return "The numbers are not evenly divisible"
+    }
+}
+console.log(divisibleBy(16, 5))
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
-
+const assignGrade = (num) => {
+    if(num >= 90) {
+        return "You got an A!"
+    } else if(num >= 80) {
+        return "you got a B!"
+    } else if( num >= 70) {
+        return "you got a C!"
+    } else {
+        return "Study more!"
+    }
+}
+console.log(assignGrade(90));
 // Write a function named isLonger that takes two strings as arguments and returns the string that contains the most characters.
-
+const isLonger = (string1, string2) => {
+    if(string1.length > string2.length) {
+        return string1;
+    } else {
+        return string2;
+    }
+}
+console.log(isLonger("chris", "Michael"));
 // Write a function named greaterNum that takes two numbers as arguments and returns whichever number is the greater (higher) number.
-
+const greaterNum = (num1, num2) => {
+    if(num1 > num2) {
+        return num1;
+    } else {
+        return num2;
+    }
+}
+console.log(greaterNum(23333, 34999999));
 // Write a function named yelling that takes a string as an argument and return the string in all uppercase case letters.
+const yelling = (string) => {
+    return string.toUpperCase()
+}
+console.log(yelling("hello"));
