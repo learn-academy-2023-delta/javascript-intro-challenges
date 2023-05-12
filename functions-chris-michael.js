@@ -38,7 +38,6 @@ const multiply =(num1,num2) =>{
 }
 
 console.log(multiply(3,5))
-
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 const divisibleBy = (num1, num2) => {
     if(num1 % num2 === 0) {
@@ -84,3 +83,60 @@ const yelling = (string) => {
     return string.toUpperCase()
 }
 console.log(yelling("hello"));
+// The World Translator
+
+// Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
+// Have your function default to returning English.
+// The Pluralizer
+const helloWorld =(lang = "en") =>{
+  if (lang === "en"){
+    return "Hello world!"
+  } else if (lang === "es"){
+    return "Hola Mundo!"
+  } else if (lang === "de"){
+    return "Hallo wereld!"
+  } else if (lang === "tr"){
+    return "Selam Dunya!"
+  } else if (lang === "fr"){
+    return "Bonjour le monde!"
+  } else {
+    return "Please enter a valid language"
+  }
+
+}
+console.log(helloWorld("es"))
+// Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
+// Enhance your function so it can handle a few collective nouns like "sheep", "goose", "child", "person" and "species".
+
+const pluralizer =(num, string) =>{
+    if (num === 1){
+        return `${num} ${string}`
+    } else {
+        return `${num} ${string}s`
+    }
+
+}
+
+console.log(pluralizer(3,"door"))
+
+
+const pluralizerTwo =(num, string) =>{
+   if (string ==="person" && num === 1){
+    return `${num} ${string}`
+   } else if (string ==="person" && num > 1){
+    return `${num} People`
+   } else if (string ==="goose" && num ===1){
+    return `${num} ${string}`
+   } else if (string ==="goose" && num !=1){
+    return `${num} geese`
+   } else if (string ==="child" && num === 1){
+     return `${num} ${string}`
+   } else if (string ==="child" && num> 1){
+    return `${num} children`
+   } else if (num === 1){
+    return `${num} ${string}`
+} else {
+    return "We are not equiped to handle that word. Pay us more"
+}
+}
+console.log(pluralizerTwo(3,"person"))
